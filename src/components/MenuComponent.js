@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Media, Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 
 class Menu extends Component {
   constructor(props) {
@@ -7,10 +7,16 @@ class Menu extends Component {
     this.state = {
       selectedDish: null
     }
+
+    console.log('Menu constructor is invoked');
   }
 
   onDishSelect(dish) {
     this.setState({ selectedDish: dish })
+  }
+
+  componentDidMount() {
+    console.log('Menu componentDidMount is invoked');
   }
 
   renderDish(dish) {
@@ -19,7 +25,7 @@ class Menu extends Component {
         <Card>
           <CardImg width="100%" src={dish.image} alt={dish.name} />
           <CardBody>
-            <CardTitle heading>{dish.name} </CardTitle>
+            <CardTitle>{dish.name} </CardTitle>
             <CardText>{dish.description}</CardText>
           </CardBody>
         </Card>
@@ -33,13 +39,14 @@ class Menu extends Component {
   }
 
   render() {
+    console.log('Menu render is invoked');
     const menu = this.props.dishes.map((dish) => {
       return (
         <div key={dish.id} className="col-12 col-md-5 m-1">
           <Card tag="li" onClick={() => this.onDishSelect(dish)}>
             <CardImg width="100%" src={dish.image} alt={dish.name} />
-            <CardImgOverlay body className="ml-5">
-              <CardTitle heading>{dish.name} </CardTitle>
+            <CardImgOverlay className="ml-5">
+              <CardTitle>{dish.name} </CardTitle>
             </CardImgOverlay>
           </Card>
         </div>
