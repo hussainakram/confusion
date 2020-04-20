@@ -1,13 +1,26 @@
 export const DISHES =
 [
   {
-    id: 0,
+   id: 0,
     name:'Uthappizza',
     image: 'assets/images/uthappizza.png',
     category: 'mains',
     label:'Hot',
     price:'4.99',
-    description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                        },
+    description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+    comments: [
+       {
+				 id: 1,
+         commentText: 'This is so deliciuous',
+         author: 'John Doe, Oct 17, 2019'
+       },
+       {
+				id: 5,
+         commentText: 'Yummy',
+         author: 'Mike Flemming, Jan 04, 2019'
+			 }
+		]
+   },
  {
     id: 1,
     name:'Zucchipakoda',
@@ -15,7 +28,20 @@ export const DISHES =
     category: 'appetizer',
     label:'',
     price:'1.99',
-    description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'                        },
+    description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
+    comments: [
+      {
+				id: 2,
+        commentText: 'Want to cook it myself',
+        author: 'Ker Areena, Dec 17, 2019'
+      },
+      {
+				id: 4,
+        commentText: 'Yummy',
+        author: 'James Copen, Nov 17, 2019'
+      },
+    ]
+   },
  {
     id: 2,
     name:'Vadonut',
@@ -23,7 +49,9 @@ export const DISHES =
     category: 'appetizer',
     label:'New',
     price:'1.99',
-    description:'A quintessential ConFusion experience, is it a vada or is it a donut?'                        },
+		description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
+		comments: []
+   },
  {
     id: 3,
     name:'ElaiCheese Cake',
@@ -31,5 +59,13 @@ export const DISHES =
     category: 'dessert',
     label:'',
     price:'2.99',
-    description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'                        }
+		description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
+		comments: [
+      {
+				id: 5,
+        commentText: 'Yummy',
+        author: 'James Copen, Nov 17, 2019'
+      },
+    ]
+   }
  ]
