@@ -12,12 +12,14 @@ export const DISHES =
        {
 				 id: 1,
          commentText: 'This is so deliciuous',
-         author: 'John Doe, Oct 17, 2019'
+         author: 'John Doe',
+         date: '02-02-2020'
        },
        {
 				id: 5,
          commentText: 'Yummy',
-         author: 'Mike Flemming, Jan 04, 2019'
+         author: 'Mike Flemming',
+         date: '05-02-2019'
 			 }
 		]
    },
@@ -33,12 +35,14 @@ export const DISHES =
       {
 				id: 2,
         commentText: 'Want to cook it myself',
-        author: 'Ker Areena, Dec 17, 2019'
+        author: 'Ker Areena',
+        date: '02-02-2019'
       },
       {
 				id: 4,
         commentText: 'Yummy',
-        author: 'James Copen, Nov 17, 2019'
+        author: 'James Copen',
+        date: '08-03-2019'
       },
     ]
    },
@@ -64,7 +68,8 @@ export const DISHES =
       {
 				id: 5,
         commentText: 'Yummy',
-        author: 'James Copen, Nov 17, 2019'
+        author: 'James Copen',
+        date: '02-01-2020'
       },
     ]
    }
