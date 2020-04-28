@@ -24,7 +24,7 @@ const RenderComments = ({comments}) => {
     comments.map((comment) => {
     return(
       <div key={comment.id}>
-        <p>{comment.commentText}</p>
+        <p>{comment.comment}</p>
         <p>-- {comment.author} {comment.date}</p>
       </div>
     )
