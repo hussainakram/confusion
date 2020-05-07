@@ -31,7 +31,6 @@ class Header extends Component {
 
   handleLogin(e) {
     this.toggleModal();
-    console.log('eqweqw');
     alert('username: ' + this.username.value + ' password: ' + this.password.value + " remember: " + this.remember.value );
     e.preventDefault();
   }
@@ -46,7 +45,7 @@ class Header extends Component {
               <img src="assets/images/logo.png" height="30" width="41" alt="Ristorante con Fusion" />
             </NavbarBrand>
 
-            <Collapse isOpen={this.state.isNavOpen} navbar>
+            <Collapse isOpen={this.state.isNavOpen} navbar animation={null}>
               <Nav navbar>
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
