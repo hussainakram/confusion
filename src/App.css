@@ -22,6 +22,11 @@
   color:floralwhite;
 }
 
+.media-object {
+  width: 150px;
+  border-radius: 5px;
+}
+
 address{
   font-size:80%;
   margin:0px;
